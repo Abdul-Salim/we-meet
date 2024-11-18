@@ -20,7 +20,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     } else {
       toast.error("Please login to access admin dashboard !!!");
       setTimeout(() => {
-        router.push("/auth/login");
+        router.push("/login");
       }, 1000);
     }
   }, []);
